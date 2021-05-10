@@ -11,10 +11,28 @@ def lcm_naive(a, b):
     return multiple
 
 
+def gcd(a, b):
+    assert 0 <= a <= 2 * 10 ** 9 and 0 <= b <= 2 * 10 ** 9
+
+    if a == 0 and b == 0:
+        return 0
+    if a == 0 and b > 0:
+        return b
+    if a > 0 and b == 0:
+        return a
+
+    greater = max(a, b)
+    lesser = min(a, b)
+    remainder = greater % lesser
+    return gcd(lesser, remainder)
+
+
 def lcm(a, b):
     assert 1 <= a <= 2 * 10 ** 9 and 1 <= b <= 2 * 10 ** 9
 
-    type here
+    gcd_a_b = gcd(a, b)
+    lcm_a_b = (a*b)/gcd_a_b
+    return lcm_a_b
 
 
 if __name__ == '__main__':

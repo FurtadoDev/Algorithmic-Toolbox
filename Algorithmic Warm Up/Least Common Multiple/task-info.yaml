@@ -3,7 +3,7 @@ files:
 - name: lcm.py
   visible: true
   placeholders:
-  - offset: 292
+  - offset: 668
     length: 9
     placeholder_text: type here
     initial_state:
@@ -40,7 +40,7 @@ files:
   visible: true
   placeholders:
   - offset: 337
-    length: 9
+    length: 18
     placeholder_text: type here
     initial_state:
       length: 9

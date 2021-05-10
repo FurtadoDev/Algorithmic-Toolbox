@@ -4,7 +4,7 @@ files:
   visible: true
   placeholders:
   - offset: 608
-    length: 9
+    length: 3512
     placeholder_text: type here
     initial_state:
       length: 9
@@ -45,7 +45,7 @@ files:
   visible: true
   placeholders:
   - offset: 904
-    length: 9
+    length: 10
     placeholder_text: type here
     initial_state:
       length: 9

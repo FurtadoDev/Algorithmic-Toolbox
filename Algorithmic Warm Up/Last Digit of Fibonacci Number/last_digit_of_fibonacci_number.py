@@ -1,6 +1,4 @@
 # python3
-
-
 def last_digit_of_fibonacci_number_naive(n):
     assert 0 <= n <= 10 ** 7
 
@@ -13,7 +11,20 @@ def last_digit_of_fibonacci_number_naive(n):
 def last_digit_of_fibonacci_number(n):
     assert 0 <= n <= 10 ** 7
 
-    type here
+    n_1 = 1
+    n_2 = 0
+    num_list = [0, 1]
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        for i in range(2, n+1):
+            num_list.append((n_1 + n_2) % 10)
+            n_2 = n_1
+            n_1 = num_list[i]
+
+    return num_list[n]
 
 
 if __name__ == '__main__':

@@ -3,7 +3,7 @@ files:
 - name: car_fueling.py
   visible: true
   placeholders:
-  - offset: 259
+  - offset: 1226
     length: 9
     placeholder_text: type here
     initial_state:
@@ -38,7 +38,7 @@ files:
   visible: true
   placeholders:
   - offset: 307
-    length: 9
+    length: 41
     placeholder_text: type here
     initial_state:
       length: 9
