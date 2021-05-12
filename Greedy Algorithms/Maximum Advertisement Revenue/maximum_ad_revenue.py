@@ -23,7 +23,14 @@ def max_dot_product(first_sequence, second_sequence):
     assert all(0 <= f <= 10 ** 5 for f in first_sequence)
     assert all(0 <= s <= 10 ** 5 for s in second_sequence)
 
-    type here
+    max_product = 0
+    first_sequence.sort()
+    second_sequence.sort()
+    num_items = len(first_sequence)
+    for i in range(0, num_items):
+        max_product = max_product + (first_sequence[i] * second_sequence[i])
+
+    return max_product
 
 
 if __name__ == '__main__':
@@ -32,3 +39,4 @@ if __name__ == '__main__':
     clicks = list(map(int, input().split()))
     assert len(prices) == len(clicks) == n
     print(max_dot_product(prices, clicks))
+    # print(max_dot_product_naive(list(range(1, 14)), list(range(1, 14))))
