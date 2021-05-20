@@ -1,11 +1,17 @@
 # python3
+import math
 
 
 def compute_optimal_summands(n):
     assert 1 <= n <= 10 ** 9
-    summands = []
 
-    type here
+    summands = []
+    k = math.floor((-1 + math.sqrt(1 + (8*n)))/2)
+    for i in range(1, k+1):
+        summands.append(i)
+    sum_of_k_summands = (k * (k + 1))/2
+    remaining_candies = n - sum_of_k_summands
+    summands[k-1] = summands[k-1] + remaining_candies
 
     return summands
 

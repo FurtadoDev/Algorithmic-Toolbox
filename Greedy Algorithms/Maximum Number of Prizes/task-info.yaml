@@ -6,14 +6,14 @@ files:
 - name: maximum_number_of_prizes.py
   visible: true
   placeholders:
-  - offset: 97
-    length: 9
+  - offset: 91
+    length: 279
     placeholder_text: type here
     initial_state:
       length: 9
       offset: 97
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
   text: |
     # python3
@@ -38,13 +38,13 @@ files:
   visible: true
   placeholders:
   - offset: 203
-    length: 9
+    length: 7
     placeholder_text: type here
     initial_state:
       length: 9
       offset: 203
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
   text: |
     import unittest
