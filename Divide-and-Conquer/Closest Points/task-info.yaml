@@ -3,15 +3,15 @@ files:
 - name: closest_points.py
   visible: true
   placeholders:
-  - offset: 600
-    length: 9
+  - offset: 917
+    length: 23
     placeholder_text: type here
     initial_state:
       length: 9
       offset: 600
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Failed
   text: |
     # python3
     from collections import namedtuple
@@ -54,23 +54,23 @@ files:
   visible: true
   placeholders:
   - offset: 278
-    length: 9
+    length: 26
     placeholder_text: type here
     initial_state:
       length: 9
       offset: 278
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
-  - offset: 1059
-    length: 9
+    selected: true
+    status: Failed
+  - offset: 1107
+    length: 438
     placeholder_text: type here
     initial_state:
       length: 9
       offset: 1059
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Failed
   text: |
     import unittest
     from closest_points import minimum_distance_squared, minimum_distance_squared_naive, Point
@@ -140,5 +140,8 @@ files:
             passed()
   learner_created: false
 feedback_link: https://www.coursera.org/learn/algorithmic-toolbox/programming/w9YDz/programming-assignment-4-divide-and-conquer/discussions
-status: Unchecked
+status: Failed
+feedback:
+  message: Syntax Error
+  time: Wed, 02 Jun 2021 22:05:33 UTC
 record: -1
