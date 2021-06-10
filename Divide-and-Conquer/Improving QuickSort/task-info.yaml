@@ -4,14 +4,14 @@ files:
   visible: true
   placeholders:
   - offset: 240
-    length: 9
+    length: 59
     placeholder_text: type here
     initial_state:
       length: 9
       offset: 240
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Failed
   text: |
     import unittest
     from quicksort import randomized_quick_sort
@@ -74,25 +74,25 @@ files:
 - name: quicksort.py
   visible: true
   placeholders:
-  - offset: 80
-    length: 9
+  - offset: 94
+    length: 404
     placeholder_text: type here
     initial_state:
       length: 9
       offset: 80
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
-  - offset: 259
-    length: 80
+    selected: true
+    status: Failed
+  - offset: 687
+    length: 259
     placeholder_text: "make a call to partition3 and then two recursive calls \nto\
       \ randomized_quick_sort"
     initial_state:
       length: 80
       offset: 259
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Failed
   text: "# python3\n\nfrom random import randint\n\n\ndef partition3(array, left,\
     \ right):\n    type here\n\n\ndef randomized_quick_sort(array, left, right):\n\
     \    if left >= right:\n        return\n    k = randint(left, right)\n    array[left],\
@@ -103,5 +103,8 @@ files:
     \ - 1)\n    print(*elements)\n"
   learner_created: false
 feedback_link: https://www.coursera.org/learn/algorithmic-toolbox/programming/w9YDz/programming-assignment-4-divide-and-conquer/discussions
-status: Unchecked
+status: Failed
+feedback:
+  message: Syntax Error
+  time: Tue, 08 Jun 2021 22:54:55 UTC
 record: -1
