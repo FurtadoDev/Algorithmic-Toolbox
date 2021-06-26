@@ -14,7 +14,16 @@ def change_naive(money):
 
 
 def change(money):
-    type here
+    coins = [1, 3, 4]
+    dp_array = [0] * (money + 1)
+    for i in range(1, money + 1):
+        temp_min = float("inf")
+        for j in range(0, len(coins)):
+            if (i - coins[j]) >= 0:
+                if(dp_array[i-coins[j]] + 1) < temp_min:
+                    temp_min = dp_array[i-coins[j]] + 1
+        dp_array[i] = temp_min
+    return int(dp_array[money])
 
 
 if __name__ == '__main__':
