@@ -39,13 +39,13 @@ files:
   visible: true
   placeholders:
   - offset: 282
-    length: 9
+    length: 12
     placeholder_text: type here
     initial_state:
       length: 9
       offset: 282
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
   text: |
     import unittest
@@ -70,14 +70,14 @@ files:
 - name: arithmetic_expression.py
   visible: true
   placeholders:
-  - offset: 85
-    length: 9
+  - offset: 3256
+    length: 35
     placeholder_text: type here
     initial_state:
       length: 9
       offset: 85
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
   text: |
     # python3
