@@ -9,10 +9,12 @@ class PartitionSouvenirs(unittest.TestCase):
             ((7, 7, 7), 1),
             ((3, 3, 3), 1),
             ((3, 3, 3, 3), 0),
-            type here
+            ((7, 3, 2, 1, 5, 4, 8), 1),
+            ((1, 2, 3, 4, 5, 5, 7, 7, 8, 10, 12, 19, 25), 1)
         ):
             self.assertEqual(partition3(values), answer)
 
 
 if __name__ == '__main__':
     unittest.main()
+

@@ -39,7 +39,7 @@ files:
   visible: true
   placeholders:
   - offset: 282
-    length: 9
+    length: 89
     placeholder_text: type here
     initial_state:
       length: 9
@@ -70,7 +70,7 @@ files:
 - name: partition_souvenirs.py
   visible: true
   placeholders:
-  - offset: 173
+  - offset: 1099
     length: 9
     placeholder_text: type here
     initial_state:
